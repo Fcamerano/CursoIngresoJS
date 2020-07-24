@@ -1,6 +1,21 @@
 function mostrar()
 {
-	//Genero el número RANDOM entre 1 y 10 
-	alert("ok");
+	let maximo = 10;
+	let minimo = 1;
+	let num;
 
-}//FIN DE LA FUNCIÓN
+	num = Math.round(Math.random() *  (maximo - minimo) + minimo);
+
+	if(num >= 9)
+	{
+		alert("Nota: " + num + ", Excelente.");
+	}
+	else if(num >= 4)
+	{
+		alert("Nota: " + num + ", Aprobado.");
+	}
+	else 
+	{
+		alert("Nota: " + num + ", Intente la próxima.");
+	}
+}
