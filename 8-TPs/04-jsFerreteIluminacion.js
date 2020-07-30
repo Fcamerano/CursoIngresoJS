@@ -10,5 +10,87 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
- 	
+    
+    
+    
+    
+    
+    /*
+    let cantlamparitas;
+    let marca;
+    const preciolamparita = 35;
+    let preciocondescuento;
+    let IIBB;
+
+
+    cantlamparitas = parseInt(document.getElementById("txtIdCantidad").value);
+    marca = parseInt(document.getElementById("Marca").value);
+
+    
+    if(cantlamparitas > 5)
+    {
+        preciocondescuento = (preciolamparita*cantlamparitas)*0.5;
+    }
+    else
+    {
+        if(cantlamparitas == 5)
+        {
+            if(marca == "ArgentinaLuz")
+            {
+                preciocondescuento = (preciolamparita*cantlamparitas)*0.6;
+            }
+            else
+            {
+                preciocondescuento = (preciolamparita*cantlamparitas)*0.7;
+            }
+        }
+        else
+        {
+            if(cantlamparitas == 4)
+            {
+                if(marca == "ArgentinaLuz" || marca == "FelipeLamparas")
+                {
+                    preciocondescuento = (preciolamparita*cantlamparitas)*0.75;
+                }
+                else
+                {
+                    preciocondescuento = (preciolamparita*cantlamparitas)*0.8;
+                }
+            }
+            else
+            {
+                if(cantlamparitas == 3)
+                {
+                    if(marca == "ArgentinaLuz")
+                    {
+                        preciocondescuento = (preciolamparita*cantlamparitas)*0.85;
+                    }
+                    if(marca == "FelipeLamparas")
+                    {
+                        preciocondescuento = (preciolamparita*cantlamparitas)*0.9;
+                    }
+                    else
+                    {
+                        preciocondescuento = (preciolamparita*cantlamparitas)*0.95;
+                    }
+                }
+                else
+                {
+                    preciocondescuento = preciolamparita*cantlamparitas;
+                }
+            }
+        }
+    }
+
+
+    document.getElementById("txtIdprecioDescuento").value = preciocondescuento;
+
+    
+    if (preciocondescuento > 120)
+    {
+        IIBB = preciocondescuento*0.1;
+        document.getElementById("txtIdprecioDescuento").value = preciocondescuento*1.1;
+        alert("Usted pago " + IIBB + " de IIBB");
+    }
+    */
 }
