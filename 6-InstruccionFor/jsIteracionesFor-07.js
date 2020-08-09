@@ -1,7 +1,16 @@
 function mostrar()
 {
+	let num;
+	let contador = 0;
 
-	alert("ok");
+	num = parseInt(prompt("Ingrese un número:"));
 
-
-}//FIN DE LA FUNCIÓN
+	for(let i=0; i<=num ; i++)
+	{
+		if(num%i == 0){
+			alert("El numero " + i + " es divisor");
+			contador++;
+		}
+	}
+	alert("Se encontraron " + contador + " numeros divisores");
+}

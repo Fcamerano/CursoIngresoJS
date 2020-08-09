@@ -3,17 +3,12 @@ function mostrar()
 	let estacion;
 	let destino;
 	let preciobase;
-	let porcentaje;
-	let precioconaumento;
-	let preciocondescuento;
+	let preciofinal;
 
 
 	estacion = document.getElementById("txtIdEstacion").value;
 	destino = document.getElementById("txtIdDestino").value;
-	preciobase = 15000;
-	precioconaumento = preciobase+(preciobase*porcentaje);
-	preciocondescuento = preciobase-(preciobase*porcentaje);
-
+	preciobase = 15000;	
 
 
 	switch(estacion)
@@ -22,81 +17,43 @@ function mostrar()
 			switch(destino)
 			{
 				case "Bariloche":
-					porcentaje = 0.2;
-					alert("El precio es " + precioconaumento);
+					preciofinal = preciobase*1.2;
 					break;
 				case "Cataratas":
-					porcentaje = 0.1;
-					alert("El precio es " + preciocondescuento);
-					break;
 				case "Cordoba":
-					porcentaje = 0.1;
-					alert("El precio es " + preciocondescuento);
+					preciofinal = preciobase*0.9;
 					break;
 				case "Mar del plata":
-					porcentaje = 0.2;
-					alert("El precio es " + preciocondescuento);
+					preciofinal = preciobase*0.8;
 					break;
 			}
 		case "Verano":
 			switch(destino)
 			{
 				case "Bariloche":
-					porcentaje = 0.2;
-					alert("El precio es " + preciocondescuento);
+					preciofinal = preciobase*0.8;
 					break;
 				case "Cataratas":
-					porcentaje = 0.1;
-					alert("El precio es " + precioconaumento);
-					break;
 				case "Cordoba":
-					porcentaje = 0.1;
-					alert("El precio es " + precioconaumento);
+					preciofinal = preciobase*1.1;
 					break;
 				case "Mar del plata":
-					porcentaje = 0.2;
-					alert("El precio es " + precioconaumento);
+					preciofinal = preciobase*1.2;
 					break;
 			}
+		case "Primavera":
 		case "Otoño":
 			switch(destino)
 			{
 				case "Bariloche":
-					porcentaje = 0.1;
-					alert("El precio es " + precioconaumento);
-					break;
+				case "Mar del plata":
 				case "Cataratas":
-					porcentaje = 0.1;
-					alert("El precio es " + precioconaumento);
+					preciofinal = preciobase*1.1;
 					break;
 				case "Cordoba":
-					porcentaje = 0.1;
-					alert("El precio es " + precioconaumento);
-					break;
-				case "Mar del plata":
-					porcentaje = 0.2;
-					alert("El precio es " + preciobase);
-					break;
-			}
-		case "Primavera":
-			switch(destino)
-			{
-				case "Bariloche":
-					porcentaje = 0.1;
-					alert("El precio es " + precioconaumento);
-					break;
-				case "Cataratas":
-					porcentaje = 0.1;
-					alert("El precio es " + precioconaumento);
-					break;
-				case "Cordoba":
-					porcentaje = 0.1;
-					alert("El precio es " + precioconaumento);
-					break;
-				case "Mar del plata":
-					porcentaje = 0.2;
-					alert("El precio es " + preciobase);
+					preciofinal = preciobase;
 					break;
 			}
 	}
+	alert(`La tarifa final del viaje sera de $${preciofinal}`);
 }

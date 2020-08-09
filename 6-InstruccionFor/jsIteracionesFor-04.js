@@ -1,7 +1,10 @@
 function mostrar()
 {
-	alert("ok");
-
-
-
-}//FIN DE LA FUNCIÓN
+	for(let i=0; i<5 ; i++)
+	{
+		console.log(i);
+		if(i==3){
+			break;
+		}
+	}
+}
